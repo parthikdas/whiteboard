@@ -73,6 +73,8 @@ canvas.addEventListener('mouseleave', () => {
 // clear entire screen
 clear.addEventListener('click', (event) => {
     event.preventDefault();
+    // The preventDefault() method cancels the event if it is cancelable, meaning that the default action that belongs to the event will not occur. 
+    // i.e. it will not occur on its own
     ctx.clearRect(0, 0, canvas.clientWidth, canvas.clientHeight); // 1st and 2nd param is initial co-ordinate, 3rd and 4th is the next distance from initial so if initials are (250, 232) then give 3rd and 4th like (10,10) so it will make it as from 250 10 dist
 })
 
