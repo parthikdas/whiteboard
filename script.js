@@ -54,6 +54,8 @@ canvas.addEventListener('mousemove', (event) => {
         lastY = offsetY;
     } else if(!isDrawing && isErasing){ // Erasing
         ctx.clearRect(offsetX, offsetY, 10, 10) // 10 by 10 eraser
+        // this will create the eraser below the cursor to make it on the cursor make it
+        // ctx.clearRect(parseInt(offsetX)-eraserSize, parseInt(offsetY)-eraserSize, 10, 10);
     }
 })
 
